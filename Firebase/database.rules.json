@@ -1,0 +1,34 @@
+{
+  "rules": {
+    "topics": {
+      "$userId": {
+        ".read": "$userId === auth.uid",
+        ".write": "$userId === auth.uid",
+        ".indexOn": ["topicDate", "createdAt"],
+        "$topicId": {
+          ".validate": "newData.hasChildren(['subject', 'topicDate', 'createdAt', 'isActive']) && newData.child('subject').isString() && newData.child('topicDate').isString() && newData.child('createdAt').isString() && newData.child('isActive').isBoolean()"
+        }
+      }
+    },
+    "tentens": {
+      "$userId": {
+        ".read": "$userId === auth.uid",
+        ".write": "$userId === auth.uid",
+        ".indexOn": ["createdAt", "topicId"],
+        "$tentenId": {
+          ".validate": "newData.hasChildren(['content', 'createdAt', 'topicId']) && newData.child('content').isString() && newData.child('createdAt').isString() && newData.child('topicId').isString()"
+        }
+      }
+    },
+    "users": {
+      "$userId": {
+        ".read": "$userId === auth.uid",
+        ".write": "$userId === auth.uid",
+        "$field": {
+          ".validate": "$field === 'email' || $field === 'displayName' || $field === 'createdAt'"
+        }
+      }
+    }
+  }
+}
+
