@@ -16,7 +16,7 @@
         ".write": "$userId === auth.uid",
         ".indexOn": ["createdAt", "topicId"],
         "$tentenId": {
-          ".validate": "newData.hasChildren(['content', 'createdAt', 'topicId']) && newData.child('content').isString() && newData.child('createdAt').isString() && newData.child('topicId').isString()"
+          ".validate": "newData.hasChildren(['content', 'createdAt', 'topicId', 'isEncrypted']) && newData.child('content').isString() && newData.child('createdAt').isString() && newData.child('topicId').isString() && newData.child('isEncrypted').isBoolean()"
         }
       }
     },
