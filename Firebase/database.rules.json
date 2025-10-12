@@ -24,8 +24,21 @@
       "$userId": {
         ".read": "$userId === auth.uid",
         ".write": "$userId === auth.uid",
-        "$field": {
-          ".validate": "$field === 'email' || $field === 'displayName' || $field === 'createdAt'"
+        ".validate": "newData.hasChildren(['email', 'encryptedDEK', 'createdAt']) && newData.child('email').isString() && newData.child('encryptedDEK').isString() && newData.child('createdAt').isString()",
+        "email": {
+          ".validate": "newData.isString()"
+        },
+        "displayName": {
+          ".validate": "newData.isString()"
+        },
+        "encryptedDEK": {
+          ".validate": "newData.isString()"
+        },
+        "createdAt": {
+          ".validate": "newData.isString()"
+        },
+        "updatedAt": {
+          ".validate": "newData.isString()"
         }
       }
     }
