@@ -1,28 +1,8 @@
 {
   "rules": {
-    "topics": {
-      "$userId": {
-        ".read": "$userId === auth.uid",
-        ".write": "$userId === auth.uid",
-        ".indexOn": ["topicDate", "createdAt"],
-        "$topicId": {
-          ".validate": "newData.hasChildren(['subject', 'topicDate', 'createdAt', 'isActive']) && newData.child('subject').isString() && newData.child('topicDate').isString() && newData.child('createdAt').isString() && newData.child('isActive').isBoolean()"
-        }
-      }
-    },
-    "tentens": {
-      "$userId": {
-        ".read": "$userId === auth.uid",
-        ".write": "$userId === auth.uid",
-        ".indexOn": ["createdAt", "topicId"],
-        "$tentenId": {
-          ".validate": "newData.hasChildren(['content', 'createdAt', 'topicId', 'isEncrypted']) && newData.child('content').isString() && newData.child('createdAt').isString() && newData.child('topicId').isString() && newData.child('isEncrypted').isBoolean()"
-        }
-      }
-    },
     "users": {
       "$userId": {
-        ".read": "$userId === auth.uid",
+        ".read": "$userId === auth.uid || (root.child('users').child(auth.uid).child('partner').child('partnerId').val() === $userId)",
         ".write": "$userId === auth.uid",
         ".validate": "newData.hasChildren(['email', 'encryptedDEK', 'createdAt']) && newData.child('email').isString() && newData.child('encryptedDEK').isString() && newData.child('createdAt').isString()",
         "email": {
@@ -38,6 +18,63 @@
           ".validate": "newData.isString()"
         },
         "updatedAt": {
+          ".validate": "newData.isString()"
+        },
+        "partner": {
+          ".validate": "newData.hasChildren(['partnerId', 'partnerEmail', 'partnerDisplayName', 'connectedAt']) && newData.child('partnerId').isString() && newData.child('partnerEmail').isString() && newData.child('partnerDisplayName').isString() && newData.child('connectedAt').isString()",
+          "partnerId": {
+            ".validate": "newData.isString()"
+          },
+          "partnerEmail": {
+            ".validate": "newData.isString()"
+          },
+          "partnerDisplayName": {
+            ".validate": "newData.isString()"
+          },
+          "sharedTopicId": {
+            ".validate": "newData.isString()"
+          },
+          "encryptedTopicDEK": {
+            ".validate": "newData.isString()"
+          },
+          "connectedAt": {
+            ".validate": "newData.isString()"
+          }
+        }
+      }
+    },
+    "topics": {
+      "$userId": {
+        ".read": "$userId === auth.uid || (root.child('users').child($userId).child('partner').child('partnerId').val() === auth.uid && root.child('users').child($userId).child('partner').child('sharedTopicId').val() === $topicId)",
+        ".write": "$userId === auth.uid",
+        ".indexOn": ["topicDate", "createdAt"],
+        "$topicId": {
+          ".validate": "newData.hasChildren(['subject', 'topicDate', 'createdAt', 'isActive']) && newData.child('subject').isString() && newData.child('topicDate').isString() && newData.child('createdAt').isString() && newData.child('isActive').isBoolean()"
+        }
+      }
+    },
+    "tentens": {
+      "$userId": {
+        ".read": "$userId === auth.uid || (root.child('tentens').child($userId).child($tentenId).child('topicId').val() === root.child('users').child($userId).child('partner').child('sharedTopicId').val() && root.child('users').child($userId).child('partner').child('partnerId').val() === auth.uid)",
+        ".write": "$userId === auth.uid",
+        ".indexOn": ["createdAt", "topicId"],
+        "$tentenId": {
+          ".validate": "newData.hasChildren(['content', 'createdAt', 'topicId', 'isEncrypted']) && newData.child('content').isString() && newData.child('createdAt').isString() && newData.child('topicId').isString() && newData.child('isEncrypted').isBoolean()"
+        }
+      }
+    },
+    "pending_shared_deks": {
+      "$userId": {
+        ".read": "$userId === auth.uid",
+        ".write": "$userId === auth.uid",
+        ".validate": "newData.hasChildren(['sharedDEK', 'inviterUserId', 'createdAt']) && newData.child('sharedDEK').isString() && newData.child('inviterUserId').isString() && newData.child('createdAt').isString()",
+        "sharedDEK": {
+          ".validate": "newData.isString()"
+        },
+        "inviterUserId": {
+          ".validate": "newData.isString()"
+        },
+        "createdAt": {
           ".validate": "newData.isString()"
         }
       }

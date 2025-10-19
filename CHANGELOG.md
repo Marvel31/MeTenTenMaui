@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.1] - 2025-01-12
+
+### 🐛 버그 수정
+
+#### Firebase 데이터 중복 저장 문제 해결
+- **문제**: Firebase에 필드가 PascalCase와 camelCase로 중복 저장
+  - 예: `Subject`와 `subject`, `IsActive`와 `isActive` 동시 존재
+- **해결**: 모든 Firebase 모델에 `[JsonProperty]` 어트리뷰트 추가
+  - `FirebaseTopic.cs`: 모든 속성에 camelCase 매핑 추가
+  - `FirebaseTenTen.cs`: 모든 속성에 camelCase 매핑 추가  
+  - `FirebaseUser.cs`: 모든 속성에 camelCase 매핑 추가
+- **결과**: Firebase에 camelCase 필드만 저장 (중복 제거)
+- **호환성**: 기존 데이터는 수동 정리 필요 (Firebase Console에서 PascalCase 필드 삭제)
+
+### 🔧 기술적 개선
+- **JSON 직렬화 명시적 제어**: `Newtonsoft.Json`의 `[JsonProperty]` 활용
+- **코딩 컨벤션 유지**: C# 코드는 PascalCase, Firebase는 camelCase
+- **데이터 정합성 향상**: 중복 필드로 인한 혼란 방지
+
 ## [1.2.0] - 2025-01-12
 
 ### 🔐 주요 기능: DEK 암호화 시스템
