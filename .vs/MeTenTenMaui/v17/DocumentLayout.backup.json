@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\jongm\\source\\repos\\MeTenTenMaui\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{417A93D9-4E27-3C46-651D-DD37A3484948}|MeTenTenMaui\\MeTenTenMaui.csproj|c:\\users\\jongm\\source\\repos\\metentenmaui\\metentenmaui\\components\\pages\\partner.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{417A93D9-4E27-3C46-651D-DD37A3484948}|MeTenTenMaui\\MeTenTenMaui.csproj|solutionrelative:metentenmaui\\components\\pages\\partner.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{417A93D9-4E27-3C46-651D-DD37A3484948}|MeTenTenMaui\\MeTenTenMaui.csproj|c:\\users\\jongm\\source\\repos\\metentenmaui\\metentenmaui\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{417A93D9-4E27-3C46-651D-DD37A3484948}|MeTenTenMaui\\MeTenTenMaui.csproj|solutionrelative:metentenmaui\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{417A93D9-4E27-3C46-651D-DD37A3484948}|MeTenTenMaui\\MeTenTenMaui.csproj|c:\\users\\jongm\\source\\repos\\metentenmaui\\metentenmaui\\models\\tenten.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{417A93D9-4E27-3C46-651D-DD37A3484948}|MeTenTenMaui\\MeTenTenMaui.csproj|solutionrelative:metentenmaui\\models\\tenten.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{417A93D9-4E27-3C46-651D-DD37A3484948}|MeTenTenMaui\\MeTenTenMaui.csproj|c:\\users\\jongm\\source\\repos\\metentenmaui\\metentenmaui\\services\\ipartnerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{417A93D9-4E27-3C46-651D-DD37A3484948}|MeTenTenMaui\\MeTenTenMaui.csproj|solutionrelative:metentenmaui\\services\\ipartnerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{417A93D9-4E27-3C46-651D-DD37A3484948}|MeTenTenMaui\\MeTenTenMaui.csproj|c:\\users\\jongm\\source\\repos\\metentenmaui\\metentenmaui\\components\\pages\\tenten.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{417A93D9-4E27-3C46-651D-DD37A3484948}|MeTenTenMaui\\MeTenTenMaui.csproj|solutionrelative:metentenmaui\\components\\pages\\tenten.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{417A93D9-4E27-3C46-651D-DD37A3484948}|MeTenTenMaui\\MeTenTenMaui.csproj|c:\\users\\jongm\\source\\repos\\metentenmaui\\metentenmaui\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{417A93D9-4E27-3C46-651D-DD37A3484948}|MeTenTenMaui\\MeTenTenMaui.csproj|solutionrelative:metentenmaui\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{417A93D9-4E27-3C46-651D-DD37A3484948}|MeTenTenMaui\\MeTenTenMaui.csproj|c:\\users\\jongm\\source\\repos\\metentenmaui\\metentenmaui\\services\\firebaseauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{417A93D9-4E27-3C46-651D-DD37A3484948}|MeTenTenMaui\\MeTenTenMaui.csproj|solutionrelative:metentenmaui\\services\\firebaseauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{417A93D9-4E27-3C46-651D-DD37A3484948}|MeTenTenMaui\\MeTenTenMaui.csproj|c:\\users\\jongm\\source\\repos\\metentenmaui\\metentenmaui\\services\\feelingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{417A93D9-4E27-3C46-651D-DD37A3484948}|MeTenTenMaui\\MeTenTenMaui.csproj|solutionrelative:metentenmaui\\services\\feelingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{417A93D9-4E27-3C46-651D-DD37A3484948}|MeTenTenMaui\\MeTenTenMaui.csproj|c:\\users\\jongm\\source\\repos\\metentenmaui\\metentenmaui\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{417A93D9-4E27-3C46-651D-DD37A3484948}|MeTenTenMaui\\MeTenTenMaui.csproj|solutionrelative:metentenmaui\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TenTen.razor",
-              "DocumentMoniker": "C:\\Users\\jongm\\source\\repos\\MeTenTenMaui\\MeTenTenMaui\\Components\\Pages\\TenTen.razor",
-              "RelativeDocumentMoniker": "MeTenTenMaui\\Components\\Pages\\TenTen.razor",
-              "ToolTip": "C:\\Users\\jongm\\source\\repos\\MeTenTenMaui\\MeTenTenMaui\\Components\\Pages\\TenTen.razor",
-              "RelativeToolTip": "MeTenTenMaui\\Components\\Pages\\TenTen.razor",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAqwDIAAABPAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Login.razor",
+              "DocumentMoniker": "C:\\Users\\jongm\\source\\repos\\MeTenTenMaui\\MeTenTenMaui\\Components\\Pages\\Login.razor",
+              "RelativeDocumentMoniker": "MeTenTenMaui\\Components\\Pages\\Login.razor",
+              "ToolTip": "C:\\Users\\jongm\\source\\repos\\MeTenTenMaui\\MeTenTenMaui\\Components\\Pages\\Login.razor*",
+              "RelativeToolTip": "MeTenTenMaui\\Components\\Pages\\Login.razor*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-06T11:11:48.513Z",
+              "WhenOpened": "2025-10-20T11:34:49.952Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TenTen.cs",
-              "DocumentMoniker": "C:\\Users\\jongm\\source\\repos\\MeTenTenMaui\\MeTenTenMaui\\Models\\TenTen.cs",
-              "RelativeDocumentMoniker": "MeTenTenMaui\\Models\\TenTen.cs",
-              "ToolTip": "C:\\Users\\jongm\\source\\repos\\MeTenTenMaui\\MeTenTenMaui\\Models\\TenTen.cs",
-              "RelativeToolTip": "MeTenTenMaui\\Models\\TenTen.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
+              "Title": "IPartnerService.cs",
+              "DocumentMoniker": "C:\\Users\\jongm\\source\\repos\\MeTenTenMaui\\MeTenTenMaui\\Services\\IPartnerService.cs",
+              "RelativeDocumentMoniker": "MeTenTenMaui\\Services\\IPartnerService.cs",
+              "ToolTip": "C:\\Users\\jongm\\source\\repos\\MeTenTenMaui\\MeTenTenMaui\\Services\\IPartnerService.cs",
+              "RelativeToolTip": "MeTenTenMaui\\Services\\IPartnerService.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAA0AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T10:47:15.59Z",
+              "WhenOpened": "2025-10-20T11:34:44.095Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Partner.razor",
-              "DocumentMoniker": "C:\\Users\\jongm\\source\\repos\\MeTenTenMaui\\MeTenTenMaui\\Components\\Pages\\Partner.razor",
-              "RelativeDocumentMoniker": "MeTenTenMaui\\Components\\Pages\\Partner.razor",
-              "ToolTip": "C:\\Users\\jongm\\source\\repos\\MeTenTenMaui\\MeTenTenMaui\\Components\\Pages\\Partner.razor",
-              "RelativeToolTip": "MeTenTenMaui\\Components\\Pages\\Partner.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "FirebaseAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\jongm\\source\\repos\\MeTenTenMaui\\MeTenTenMaui\\Services\\FirebaseAuthService.cs",
+              "RelativeDocumentMoniker": "MeTenTenMaui\\Services\\FirebaseAuthService.cs",
+              "ToolTip": "C:\\Users\\jongm\\source\\repos\\MeTenTenMaui\\MeTenTenMaui\\Services\\FirebaseAuthService.cs",
+              "RelativeToolTip": "MeTenTenMaui\\Services\\FirebaseAuthService.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAArwIMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T11:32:47.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FeelingService.cs",
+              "DocumentMoniker": "C:\\Users\\jongm\\source\\repos\\MeTenTenMaui\\MeTenTenMaui\\Services\\FeelingService.cs",
+              "RelativeDocumentMoniker": "MeTenTenMaui\\Services\\FeelingService.cs",
+              "ToolTip": "C:\\Users\\jongm\\source\\repos\\MeTenTenMaui\\MeTenTenMaui\\Services\\FeelingService.cs",
+              "RelativeToolTip": "MeTenTenMaui\\Services\\FeelingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T11:32:45.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Users\\jongm\\source\\repos\\MeTenTenMaui\\MeTenTenMaui\\wwwroot\\css\\app.css",
+              "RelativeDocumentMoniker": "MeTenTenMaui\\wwwroot\\css\\app.css",
+              "ToolTip": "C:\\Users\\jongm\\source\\repos\\MeTenTenMaui\\MeTenTenMaui\\wwwroot\\css\\app.css",
+              "RelativeToolTip": "MeTenTenMaui\\wwwroot\\css\\app.css",
+              "ViewState": "AgIAAGcLAAAAAAAAAAAEwHULAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-10-20T11:32:43.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\jongm\\source\\repos\\MeTenTenMaui\\MeTenTenMaui\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "MeTenTenMaui\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\jongm\\source\\repos\\MeTenTenMaui\\MeTenTenMaui\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "MeTenTenMaui\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAHMAAAAAAAAAAAApwIEAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-06T10:36:10.386Z",
+              "WhenOpened": "2025-10-20T11:32:35.049Z",
               "EditorCaption": ""
             }
           ]
